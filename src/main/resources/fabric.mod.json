@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "examplemod",
+  "version": "${version}",
+  "name": "ExampleMod",
+  "description": "Your mod description.",
+  "authors": [
+    "You"
+  ],
+  "contact": {
+    "website": "https://example.com",
+    "repo": "https://example.com/you/your_repo"
+  },
+  "license": "MIT",
+  "icon": "assets/examplemod/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "com.example.examplemod.ExampleMod"
+    ]
+  },
+  "mixins": [
+    "examplemod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "lunarcore": ">=${lunarcore_version}"
+  }
+}
