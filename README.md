@@ -12,8 +12,18 @@ A mod template for LunarCore with Fabric Loader.
   1. Click on the [![Use this template](https://img.shields.io/badge/-Use%20this%20template-brightgreen)](https://github.com/yuko1101/LunarCoreModTemplate/generate) to create a new repo starting from this template.
   2. Clone your repo and open it in your IDE (IntelliJ IDEA is recommended).
   3. Run the gradle task named `runServer` to generate server files to `run` dir. (You can stop the task after LunarCore has been started.)
-  4. Just write some code.
-  5. Run `runServer` to test your mod.
+  4. Put LunarCore resources into the `run` dir.
+  5. Just write some code.
+  6. Run `runServer` to test your mod.
+
+## Running in Production Environment
+You can just run the server in `run` dir by `java @args.txt` but with this steps you can run the server without setting up development environment.
+
+**Requires [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)**
+  1. Create a empty folder.
+  2. Put LunarCore.jar, GameProvider.jar and libraries for it. (GameProvider.jar and its libraries can be downloaded from uploaded artifacts on [LunarCoreGameProvider GitHub Actions](https://github.com/yuko1101/LunarCoreGameProvider/actions/workflows/build.yml).)
+  3. Put resources for LunarCore into the same dir.
+  4. Run `java @args.txt`.
 
 ## What is Fabric Loader?
 [Fabric Loader](https://github.com/FabricMC/fabric-loader) is a lightweight mod loader usually used for Minecraft which provide much useful features for creating mods. Fabric Loader recognizes a jar in the `mods` folder with a [fabric.mod.json](src/main/resources/fabric.mod.json) as a mod and loads it at startup.
