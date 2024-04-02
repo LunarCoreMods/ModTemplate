@@ -5,7 +5,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath "com.github.yuko1101:LunarCoreRunner:f9533151ff"
+        classpath "com.github.yuko1101:LunarCoreRunner:128657bd1f"
     }
 }
 

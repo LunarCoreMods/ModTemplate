@@ -4,8 +4,6 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.impl.util.log.Log;
 import net.fabricmc.loader.impl.util.log.LogCategory;
 
-import java.util.logging.Logger;
-
 public class ExampleMod implements ModInitializer {
 
     public static final String MOD_NAME = "ExampleMod";
