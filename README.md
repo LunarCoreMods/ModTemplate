@@ -7,6 +7,8 @@ A mod template for LunarCore with Fabric Loader.
   - Supports [Access Wideners](https://www.fabricmc.net/wiki/tutorial:accesswideners)
 
 ## Get Started
+**Requires [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)**
+
   1. Click on the [![Use this template](https://img.shields.io/badge/-Use%20this%20template-brightgreen)](https://github.com/yuko1101/LunarCoreModTemplate/generate) to create a new repo starting from this template.
   2. Clone your repo and open it in your IDE (IntelliJ IDEA is recommended).
   3. Run the gradle task named `runServer` to generate server files to `run` dir. (You can stop the task after LunarCore has been started.)
