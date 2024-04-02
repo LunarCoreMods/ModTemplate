@@ -1,6 +1,19 @@
-plugins {
-    id 'java'
+buildscript {
+    repositories {
+        maven {
+            url = "https://jitpack.io"
+        }
+    }
+    dependencies {
+        classpath "com.github.yuko1101:LunarCoreRunner:f9533151ff"
+    }
 }
+
+plugins {
+    id "java"
+}
+
+apply plugin: "io.github.yuko1101.lunarcorerunner"
 
 version = project.mod_version
 group = project.maven_group
@@ -18,10 +31,11 @@ repositories {
 }
 
 dependencies {
-    implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    // TODO: use gameprovider_version
+    gameprovider "com.github.yuko1101:LunarCoreGameProvider:26ac46d126"
 
     // TODO: use lunarcore_version
-    implementation "com.github.Melledy:LunarCore:development-SNAPSHOT"
+    lunarcore "com.github.Melledy:LunarCore:development-SNAPSHOT"
 
     implementation "org.spongepowered:mixin:${project.mixin_version}"
     annotationProcessor "org.spongepowered:mixin:${project.mixin_version}:processor"
