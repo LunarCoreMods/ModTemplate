@@ -4,7 +4,6 @@ A mod template for LunarCore with Fabric Loader.
 ## Features
   - Source code injection with [Mixin](https://github.com/SpongePowered/Mixin) (and [MixinExtras](https://github.com/LlamaLad7/MixinExtras))
   - Run/Debug your mod with a single task
-  - Supports [Access Wideners](https://www.fabricmc.net/wiki/tutorial:accesswideners)
 
 ## Get Started
 **Requires [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)**
