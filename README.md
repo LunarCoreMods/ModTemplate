@@ -16,13 +16,14 @@ A mod template for LunarCore with Fabric Loader.
   6. Run `runServer` to test your mod.
 
 ## Running in Production Environment
-You can just run the server in `run` dir by `java @args.txt` but with this steps you can run the server without setting up development environment.
+You can just run the server in `run` dir by `java "@args.txt"` but with this steps you can run the server without setting up development environment.
 
 **Requires [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)**
-  1. Create a empty folder.
-  2. Put LunarCore.jar, GameProvider.jar and libraries for it. (GameProvider.jar and its libraries can be downloaded from uploaded artifacts on [LunarCoreGameProvider GitHub Actions](https://github.com/yuko1101/LunarCoreGameProvider/actions/workflows/build.yml) or directly download [here](https://nightly.link/yuko1101/LunarCoreGameProvider/workflows/build/main/build.zip).)
-  3. Put resources for LunarCore into the same dir.
-  4. Run `java @args.txt`.
+  1. Setup standard LunarCore by following [these steps](https://github.com/Melledy/LunarCore?tab=readme-ov-file#compiling-the-server).
+  2. Make sure that LunarCore server starts up properly.
+  3. Download build.zip from [LunarCoreGameProvider GitHub Actions](https://github.com/yuko1101/LunarCoreGameProvider/actions/workflows/build.yml) or directly download [here](https://nightly.link/yuko1101/LunarCoreGameProvider/workflows/build/main/build.zip).
+  4. Unzip the build.zip and put them into your LunarCore folder.
+  6. Run `java "@args.txt"` instead of `java -jar LunarCore.jar` to launch your server with mods.
 
 ## What is Fabric Loader?
 [Fabric Loader](https://github.com/FabricMC/fabric-loader) is a lightweight mod loader usually used for Minecraft which provide much useful features for creating mods. Fabric Loader recognizes a jar in the `mods` folder with a [fabric.mod.json](src/main/resources/fabric.mod.json) as a mod and loads it at startup.
