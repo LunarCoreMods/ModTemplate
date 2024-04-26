@@ -1,19 +1,7 @@
-buildscript {
-    repositories {
-        maven {
-            url = "https://jitpack.io"
-        }
-    }
-    dependencies {
-        classpath "com.github.yuko1101:LunarCoreRunner:128657bd1f"
-    }
-}
-
 plugins {
     id "java"
+    id "io.github.yuko1101.lunarcorerunner" version "128657bd1f"
 }
-
-apply plugin: "io.github.yuko1101.lunarcorerunner"
 
 version = project.mod_version
 group = project.maven_group
@@ -44,13 +32,16 @@ dependencies {
 }
 
 processResources {
-    inputs.property "version", project.version
-    inputs.property "lunarcore_version", project.lunarcore_version
-    inputs.property "loader_version", project.loader_version
+    def properties = [
+            version: project.version,
+            lunarcore_version: lunarcore_version,
+            loader_version: loader_version
+    ]
+    inputs.properties properties
     filteringCharset "UTF-8"
 
     filesMatching("fabric.mod.json") {
-        expand "version": project.version, "lunarcore_version": project.lunarcore_version, "loader_version": project.loader_version
+        expand properties
     }
 }
 
@@ -63,7 +54,12 @@ java {
 }
 
 jar {
+    archiveBaseName.set(archives_base_name)
     from("LICENSE") {
-        rename { "${it}_${project.archivesBaseName}"}
+        rename { "${it}_${archives_base_name}"}
     }
+}
+
+sourcesJar {
+    archiveBaseName.set(archives_base_name)
 }
