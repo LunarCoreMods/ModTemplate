@@ -1,6 +1,6 @@
 plugins {
     id "java"
-    id "io.github.yuko1101.lunarcorerunner" version "128657bd1f"
+    id "io.github.yuko1101.lunarcorerunner" version "3190713d11"
 }
 
 version = project.mod_version
