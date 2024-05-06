@@ -1,6 +1,6 @@
 plugins {
     id "java"
-    id "io.github.yuko1101.lunarcorerunner" version "3190713d11"
+    id "io.github.yuko1101.lunarcorerunner" version "1b68b5ba41"
 }
 
 version = project.mod_version
@@ -23,7 +23,7 @@ dependencies {
     gameprovider "com.github.yuko1101:LunarCoreGameProvider:26ac46d126"
 
     // TODO: use lunarcore_version
-    lunarcore "com.github.Melledy:LunarCore:development-SNAPSHOT"
+    lunarcore "com.github.Melledy:LunarCore:d993cd9299"
 
     implementation "org.spongepowered:mixin:${project.mixin_version}"
     annotationProcessor "org.spongepowered:mixin:${project.mixin_version}:processor"

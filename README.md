@@ -3,6 +3,7 @@ A mod template for LunarCore with Fabric Loader.
 
 ## Features
   - Source code injection with [Mixin](https://github.com/SpongePowered/Mixin) (and [MixinExtras](https://github.com/LlamaLad7/MixinExtras))
+  - Easy widen access modifiers with [access-widener](https://github.com/FabricMC/access-widener)
   - Run/Debug your mod with a single task
 
 ## Get Started
@@ -40,3 +41,15 @@ You can just run the server in `run` dir by `java "@args.txt"` but with these st
 **References**
 - [Introduction and examples by FabricMC](https://www.fabricmc.net/wiki/tutorial:mixin_introduction)
 - [Official Wiki](https://github.com/SpongePowered/Mixin/wiki)
+
+## About access-widener
+[access-widener](https://github.com/FabricMC/access-widener) is a tool to widen access modifiers of classes, fields, and methods. You may need to use a `private` (or `protected`) class, field, or method from your dependency. In that case, you can use access-widener to access it by modifying the access modifier to `public`.
+
+This can be done by Mixin, but access-widener is much easier to use and more efficient, and provides more clean code.
+
+> [!TIP]
+> With [Minecraft Dev plugin](https://plugins.jetbrains.com/plugin/8327-minecraft-development), you can easily get the access widener entry.
+> Write code which accesses to the private declaration. Then, press `Alt + Enter` and just select `Copy AW entry`.
+
+**References**
+- [Tutorial by FabricMC](https://fabricmc.net/wiki/tutorial:accesswideners)
