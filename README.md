@@ -17,7 +17,7 @@ A mod template for LunarCore with Fabric Loader.
   6. Run `runServer` to test your mod.
 
 ## Running in Production Environment
-You can just run the server in `run` dir by `java "@args.txt"` but with these steps you can run the server without setting up development environment.
+You can just run the server in `run` dir by `java "@args.txt"` but with the steps below you can run the server without setting up development environment.
 
 **Requires [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)**
   1. Setup standard LunarCore by following [these steps](https://github.com/Melledy/LunarCore?tab=readme-ov-file#compiling-the-server).
