@@ -9,7 +9,7 @@ A mod template for LunarCore with Fabric Loader.
 ## Get Started
 **Requires [JDK 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)**
 
-  1. Click on the [![Use this template](https://img.shields.io/badge/-Use%20this%20template-brightgreen)](https://github.com/LunarCore-Mods/ModTemplate/generate) to create a new repo starting from this template.
+  1. Click on the [![Use this template](https://img.shields.io/badge/-Use%20this%20template-brightgreen)](https://github.com/yuko1101/LunarCoreModTemplate/generate) to create a new repo starting from this template.
   2. Clone your repo and open it in your IDE (IntelliJ IDEA with [Minecraft Dev plugin](https://plugins.jetbrains.com/plugin/8327-minecraft-development) is recommended).
   3. Run the gradle task named `runServer` to generate server files to `run` dir. (You can stop the task after LunarCore has been started.)
   4. Put LunarCore resources into the `run` dir.
@@ -23,7 +23,7 @@ You can just run the server in `run` dir by `java "@args.txt"` but with these st
   1. Setup standard LunarCore by following [these steps](https://github.com/Melledy/LunarCore?tab=readme-ov-file#compiling-the-server).
   2. Make sure that LunarCore server starts up properly.
   3. Download build.zip from [LunarCoreGameProvider GitHub Actions](https://github.com/LunarCore-Mods/GameProvider/actions/workflows/build.yml) or directly download [here](https://nightly.link/LunarCore-Mods/GameProvider/workflows/build/main/build.zip).
-  4. Unzip the build.zip and put the , into your LunarCore folder.
+  4. Unzip the build.zip and put the files, into your LunarCore folder.
   6. Run `java "@args.txt"` instead of `java -jar LunarCore.jar` to launch your server with mods.
 
 ## What is Fabric Loader?
