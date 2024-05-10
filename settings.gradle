@@ -1,8 +1,8 @@
 pluginManagement {
     resolutionStrategy {
         eachPlugin {
-            if (requested.id.toString() == "io.github.yuko1101.lunarcorerunner") {
-                useModule("com.github.yuko1101:LunarCoreRunner:${requested.version}")
+            if (requested.id.toString() == "io.github.lunarcoremods.gradlerunner") {
+                useModule("com.github.LunarCore-Mods:GradleRunner:${requested.version}")
             }
         }
     }

@@ -1,6 +1,6 @@
 plugins {
     id "java"
-    id "io.github.yuko1101.lunarcorerunner" version "1b68b5ba41"
+    id "io.github.lunarcoremods.gradlerunner" version "724fd81236"
 }
 
 version = project.mod_version
@@ -20,7 +20,7 @@ repositories {
 
 dependencies {
     // TODO: use gameprovider_version
-    gameprovider "com.github.yuko1101:LunarCoreGameProvider:26ac46d126"
+    gameprovider "com.github.LunarCore-Mods:GameProvider:7026b233da"
 
     // TODO: use lunarcore_version
     lunarcore "com.github.Melledy:LunarCore:d993cd9299"
