@@ -1,17 +1,17 @@
 package com.example.examplemod;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.loader.impl.util.log.Log;
-import net.fabricmc.loader.impl.util.log.LogCategory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ExampleMod implements ModInitializer {
 
     public static final String MOD_NAME = "ExampleMod";
 
-    public static final LogCategory LOG_CATEGORY = LogCategory.create(MOD_NAME);
+    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_NAME);
 
     @Override
     public void onInitialize() {
-        Log.info(LOG_CATEGORY, "Initializing " + MOD_NAME);
+        LOGGER.info("Initializing " + MOD_NAME);
     }
 }
