@@ -50,8 +50,6 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 jar {
-    archiveBaseName.set(archives_base_name)
-    from("LICENSE") {
-        rename { "${it}_${archives_base_name}"}
-    }
+    archiveBaseName.set(archive_base_name)
+    from("LICENSE")
 }
