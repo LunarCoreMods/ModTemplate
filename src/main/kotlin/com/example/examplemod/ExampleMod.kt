@@ -1,17 +1,17 @@
-package com.example.examplemod;
+package com.example.examplemod
 
-import net.fabricmc.api.ModInitializer;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import net.fabricmc.api.ModInitializer
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
 
-public class ExampleMod implements ModInitializer {
+class ExampleMod : ModInitializer {
+    companion object {
+        const val MOD_NAME: String = "ExampleMod"
 
-    public static final String MOD_NAME = "ExampleMod";
+        val LOGGER: Logger = LoggerFactory.getLogger(MOD_NAME)
+    }
 
-    public static final Logger LOGGER = LoggerFactory.getLogger(MOD_NAME);
-
-    @Override
-    public void onInitialize() {
-        LOGGER.info("Initializing " + MOD_NAME);
+    override fun onInitialize() {
+        LOGGER.info("Initializing $MOD_NAME with Kotlin")
     }
 }
