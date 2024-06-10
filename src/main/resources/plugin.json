@@ -1,0 +1,9 @@
+{
+  "name": "ExampleMod",
+  "description": "Your plugin description.",
+  "version": "${version}",
+  "api": 1,
+  "authors": ["You"],
+  "mainClass": "com.example.examplemod.ExamplePlugin",
+  "comments": []
+}

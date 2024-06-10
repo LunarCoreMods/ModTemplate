@@ -41,6 +41,9 @@ tasks {
         filesMatching("fabric.mod.json") {
             expand(props)
         }
+        filesMatching("plugin.json") {
+            expand(props)
+        }
     }
 
     jar {
