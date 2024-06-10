@@ -23,7 +23,7 @@ dependencies {
     gameprovider "com.github.LunarCore-Mods:GameProvider:7026b233da"
 
     // TODO: use lunarcore_version
-    lunarcore "com.github.Melledy:LunarCore:64f013d87d"
+    lunarcore "com.github.Melledy:LunarCore:development-SNAPSHOT"
 
     implementation "org.spongepowered:mixin:${project.mixin_version}"
     annotationProcessor "org.spongepowered:mixin:${project.mixin_version}:processor"
