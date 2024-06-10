@@ -21,7 +21,7 @@ dependencies {
     gameprovider("com.github.LunarCore-Mods:GameProvider:7026b233da")
 
     // TODO: use lunarcore_version
-    lunarcore("com.github.Melledy:LunarCore:64f013d87d")
+    lunarcore("com.github.Melledy:LunarCore:development-SNAPSHOT")
 
     val mixinVersion = property("mixin_version") as String
     implementation("org.spongepowered:mixin:$mixinVersion")
