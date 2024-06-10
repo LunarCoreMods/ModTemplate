@@ -43,6 +43,9 @@ processResources {
     filesMatching("fabric.mod.json") {
         expand properties
     }
+    filesMatching("plugin.json") {
+        expand properties
+    }
 }
 
 tasks.withType(JavaCompile).configureEach {
