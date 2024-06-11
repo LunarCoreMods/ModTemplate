@@ -45,7 +45,7 @@ You can just run the server in `run` dir by `java "@args.txt"` but with these st
 ## About access-widener
 [access-widener](https://github.com/FabricMC/access-widener) is a tool to widen access modifiers of classes, fields, and methods. You may need to use a `private` (or `protected`) class, field, or method from your dependency. In that case, you can use access-widener to access it by modifying the access modifier to `public`.
 
-This can be done by Mixin, but access-widener is much easier to use and more efficient, and provides more clean code.
+This can also be done by Mixin, but access-widener is much easier to use and more efficient, and provides more clean code.
 
 > [!TIP]
 > With [Minecraft Dev plugin](https://plugins.jetbrains.com/plugin/8327-minecraft-development), you can easily get the access widener entry.
