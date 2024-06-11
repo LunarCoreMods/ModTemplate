@@ -23,7 +23,7 @@ You can just run the server in `run` dir by `java "@args.txt"` but with these st
   1. Setup standard LunarCore by following [these steps](https://github.com/Melledy/LunarCore?tab=readme-ov-file#compiling-the-server).
   2. Make sure that LunarCore server starts up properly.
   3. Download build.zip from [LunarCoreGameProvider GitHub Actions](https://github.com/LunarCore-Mods/GameProvider/actions/workflows/build.yml) or directly download [here](https://nightly.link/LunarCore-Mods/GameProvider/workflows/build/main/build.zip).
-  4. Unzip the build.zip and put the files, into your LunarCore folder.
+  4. Unzip the build.zip and put the files into your LunarCore folder.
   6. Run `java "@args.txt"` instead of `java -jar LunarCore.jar` to launch your server with mods.
 
 ## What is Fabric Loader?
